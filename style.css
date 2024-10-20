@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+:root {
+    --color-verde-musgo: #556B2F;
+    --color-dourado: #FFD700;
+    --color-marrom-terroso: #8B4513;
+    --color-vermelho-rubi: #D32F2F;
+    --color-bege-claro: #F5F5DC;
+}
+
+/* .exo-2 {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+
+
+body{
+    background-color: var(--color-bege-claro);
+    overflow-x: hidden;
+}
+
+header {
+    background-color: var(--color-dourado);
+}
+
+header #headersuperior {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color-vermelho-rubi);
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.178);
+}
+
+header #headersuperior img {
+    width: 25px ;
+    height: 25px ;
+}
+
+
+header #headersuperior #dadosuperior {
+    display: flex;
+    gap: 10px;
+}
+
+header #headersuperior p a {
+    text-decoration: none;
+    color: white;
+}
+
+
+header #headersuperior p a:hover {
+    text-decoration: underline;
+}
+
+header #headerinferior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.349);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.178);
+}
+
+header #headerinferior #logo {
+    padding: 20px;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    color: white;
+    font-size: 40px;
+
+}
+
+header #headerinferior #cabecalhodir #logo #letra1{
+
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    color: var(--color-vermelho-rubi);
+    font-size: 50px;
+
+
+}
+
+header #headerinferior #cabecalhodir #logo #letra2{
+
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    color: var(--color-verde-musgo);
+    font-size: 50px;
+
+}
+
+
+header #headerinferior #cabecalhocentro nav {
+    display: flex;
+    gap: 20px;
+}
+
+header #headerinferior #cabecalhocentro nav a {
+   text-decoration: none;
+   color: white;
+   transition: 0.8s;
+
+}
+
+header #headerinferior #cabecalhocentro nav a:hover {
+    color: var(--color-vermelho-rubi);
+ 
+ }
+
+ header #headerinferior #cabecalhoesq {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    gap: 50px;
+    justify-content: space-between;
+ }
+
+ header #headerinferior #cabecalhoesq #buscador {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.349);
+
+ }
+
+ header #headerinferior #cabecalhoesq #buscador input{
+    height: 30px;
+    width: 200px;
+    border: none;
+    padding: 2px;
+    border-radius: 10px 0px 0px 10px;
+    
+ }
+
+
+ header #headerinferior #cabecalhoesq #buscador img{
+    background-color: var(--color-vermelho-rubi);
+    padding-right: 2px;
+    padding-left: 2px;
+    width: 20px ;
+    height: 20px ;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 0px 10px 10px 0px;    
+ }
+
+ header #headerinferior #cabecalhoesq #carrodecompras {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    border: var(--color-vermelho-rubi) 2px solid;
+    padding: 10px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.349);
+ }
+
+ header #headerinferior #cabecalhoesq #carrodecompras button{
+    height: 10px;
+    width: 10px;
+    border: none;
+    background-color: #D32F2F;
+ }
+
+ main {
+    display: flex;
+    flex-direction: row;
+ }
+ 
+ main #productos ul {
+    list-style: none;
+    
+ }
+
+main #productos ul li {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    background-color: white;
+    width: 400px;
+    justify-content: space-between;
+    padding: 10px;
+    border: var(--color-verde-musgo) 1px solid;
+    align-items: center;
+    font-weight: 700;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.315);
+    border-radius: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.342);
+    transition: 0.5s;
+    
+}
+
+main #productos ul li:hover {
+
+    background-color: var(--color-bege-claro);
+
+}
+
+main #productos ul li img{
+    width: 130px;
+}
+
+main #productos ul li button{
+    border: none;
+    background-color: var(--color-verde-musgo);
+    box-shadow: 2px 2px 5px #556b2f8e;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.8s;
+    
+
+}
+
+main #productos ul li button:hover{
+    background-color: #3ead60;
+
+}
+
+main #agregados {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    
+
+}
+
+main #agregados .produtosagregados{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+    background-color: white;
+    padding: 10px;
+    border: var(--color-verde-musgo) 2px solid;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.315);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.342);
+        
+}
+
+main #agregados .produtosagregados img{
+    width: 200px;
+}
+
+main #agregados divx{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#eliminar {
+    border: none;
+    background-color: #D32F2F;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+
+}
+
+main #agregados #principal button:hover{
+    background-color: #8b1f1f;
+    
+}
+
+.modal{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.185);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    display: none;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    border: var(--color-verde-musgo) 2px solid;
+}
+
+.modal-content #cerrar {
+    text-align: left;
+    cursor: pointer;
+}
+
+
+
+
+.modal-content img{
+
+    width: 400px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GG Market</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div id="headersuperior">
+
+            <div id="icones">
+                <a href="#"><img src="img/facebook.png" alt="icone-facebook"></a>
+                <a href="#"><img src="img/instagram.png" alt="icone-instagram"></a>
+            </div>
+                
+            <div>
+                <p>Para esvaziar el carrito pression el botom rojo ao lado del valor.</p>
+            </div>
+
+            <div id="dadosuperior">
+                <p><strong>Email:</strong> <a href="mailto:ggmarket@market.com">ggmarket@market.com</a></p>
+                <p><strong>Telofono:</strong><a href="#">302 322 7000</a></p>
+            </div>
+
+        </div>
+
+        <div id="headerinferior">
+
+            <div id="cabecalhodir">
+                <p id="logo"><span id="letra1">G</span><span id="letra2">G</span> Market</p>
+            </div>
+
+            <div id="cabecalhocentro">
+
+                <nav>
+                    <h2 class="nav"><a href="#">Tienda</a></h2>
+                    <h2 class="nav"><a href="#">Juegos</a></h2>
+                    <h2 class="nav"><a href="#">Biblioteca</a></h2>
+                    <h2 class="nav"><a href="#">Contacto</a></h2>
+                </nav>
+
+
+            </div>
+
+            <div id="cabecalhoesq">
+
+                <div id="buscador">
+                    <input type="text" placeholder="Buscar">
+                    <img src="img/Lupa-branca.png" alt="lupa-branca-menu-de-busca">
+                </div>
+
+                <div id="carrodecompras">
+                    <img src="img/carro-compra.png" alt="carrito">
+                    <p id="quantidade"></p>
+                    <p>Valor Total: $<span id="total"></span></p>
+                    <abbr title="Esvaziar el Carrito"><button type="button" onclick="esvaziar()"></button></abbr>
+                </div>
+        </div>
+    </header>
+
+    <div class="modal">
+        <div class="modal-content"></div>
+    </div>
+
+    <main>
+        <div id="productos">
+            <ul>
+                <li><img src="https://mirandacomputacao.jetassets.com.br/produto/47892-principal.png" alt="Super Mario RPG" class="imgjogos">Super Mario Party <button type="button" onclick="agregarCoisas('Super Mario Party', 'Jogo de Tabuleiro', '350', 'https://mirandacomputacao.jetassets.com.br/produto/47892-principal.png')">Agregar</button></li>
+
+                <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDm-XbgLQ8UMQfcg4n9dQG9tSTUlLDCEMKHg&s" alt="Super Neptunia RPG" class="imgjogos">Super Neptunia RPG<button type="button" onclick="agregarCoisas('Super Neptunia RPG', 'Jogo de RPG', '340', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDm-XbgLQ8UMQfcg4n9dQG9tSTUlLDCEMKHg&s')">Agregar</button></li>
+
+                <li><img src="https://mirandacomputacao.jetassets.com.br/produto/47100-principal.png" alt="Super Mario Kart 8 Deluxe" class="imgjogos" class="imgjogos">Super Mario Kart 8 Deluxe <button type="button" onclick="agregarCoisas('Super Mario RPG', 'Jogo de RPG', '320', 'https://mirandacomputacao.jetassets.com.br/produto/47100-principal.png')">Agregar</button></li>
+
+            </ul>
+        </div>
+        <div id="agregados"></div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
